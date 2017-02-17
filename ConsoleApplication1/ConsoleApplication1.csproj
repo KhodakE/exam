@@ -44,7 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Box\Box.cs" />
+
+    <Compile Include="Box\BoxCarton.cs" />
+    <Compile Include="Box\BoxMetal.cs" />
+
     <Compile Include="Box\BoxCompressor.cs" />
+
     <Compile Include="Car\Car.cs" />
     <Compile Include="IBox.cs" />
     <Compile Include="ICar.cs" />
