@@ -7,38 +7,12 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1.Car
 {
-    class SmallCar : ICar
+    class SmallCar : Car
     {
-        public ISize ISize
+        public SmallCar()
         {
-            get
-            {
-                return new ConsoleApplication1.Size.Size();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        public double Price
-        {
-            get
-            {
-                return 200;
-            }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        public double CountPrice(List<IBox> Boxes)
-        {
-            //double len = Boxes.Sum(s => s.ISize.Length);
-            throw new NotImplementedException();
+            Price = 200;
+            ISize = new Size.Size();
         }
     }
 }
