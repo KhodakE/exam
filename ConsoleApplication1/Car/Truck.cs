@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleApplication1;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,12 +7,13 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1.Car
 {
-    class Car : ICar
+    public class Truck : ICar
     {
         public ISize ISize
         {
             get
             {
+
                 return new Size.Size();
             }
 
