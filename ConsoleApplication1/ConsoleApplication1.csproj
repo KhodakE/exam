@@ -51,6 +51,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Size\Size.cs" />
+    <Compile Include="Size\SizeCar.cs" />
+    <Compile Include="Size\SizeVolume.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
