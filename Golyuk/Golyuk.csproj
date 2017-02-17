@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{45E564BF-5CDB-4C66-8651-327081E29E69}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{40081D98-54DD-4DA4-9F20-1245099865E7}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ConsoleApplication1</RootNamespace>
-    <AssemblyName>ConsoleApplication1</AssemblyName>
+    <RootNamespace>Golyuk</RootNamespace>
+    <AssemblyName>Golyuk</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,31 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Box\Box.cs" />
-
-    <Compile Include="Box\BoxCarton.cs" />
-    <Compile Include="Box\BoxMetal.cs" />
-
-    <Compile Include="Box\BoxCompressor.cs" />
-
-    <Compile Include="Car\Car.cs" />
     <Compile Include="Car\SmallCar.cs" />
-    <Compile Include="Car\Truck.cs" />
-    <Compile Include="IBox.cs" />
-    <Compile Include="ICar.cs" />
-    <Compile Include="ISize.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Size\Size.cs" />
-    <Compile Include="Size\SizeCar.cs" />
-    <Compile Include="Size\SizeVolume.cs" />
-    <Compile Include="Size\SizeComparer.cs" />
+    <Compile Include="Car\CarSize\TempCarSize.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="ClassDiagram.cd" />
+    <ProjectReference Include="..\ConsoleApplication1\ConsoleApplication1.csproj">
+      <Project>{45e564bf-5cdb-4c66-8651-327081e29e69}</Project>
+      <Name>ConsoleApplication1</Name>
+    </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
