@@ -44,6 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Box\Box.cs" />
+
+    <Compile Include="Box\BoxCarton.cs" />
+    <Compile Include="Box\BoxMetal.cs" />
+
+    <Compile Include="Box\BoxCompressor.cs" />
+
     <Compile Include="Car\Car.cs" />
     <Compile Include="IBox.cs" />
     <Compile Include="ICar.cs" />
@@ -51,6 +57,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Size\Size.cs" />
+    <Compile Include="Size\SizeCar.cs" />
+    <Compile Include="Size\SizeVolume.cs" />
+    <Compile Include="Size\SizeComparer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
