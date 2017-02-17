@@ -17,7 +17,7 @@ namespace ConsoleApplication1.Size
                 return false;
         }
 
-        bool CompareVolume(SizeVolume volumeA, SizeVolume volumeB)
+        public bool CompareVolume(SizeVolume volumeA, SizeVolume volumeB)
         {
             if (volumeA.Volume() > volumeB.Volume())
                 return true;
