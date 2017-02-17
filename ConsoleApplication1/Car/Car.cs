@@ -12,7 +12,7 @@ namespace ConsoleApplication1.Car
         {
             get
             {
-                return new Size.Size();
+//                return new Size.Size();
             }
 
             set
