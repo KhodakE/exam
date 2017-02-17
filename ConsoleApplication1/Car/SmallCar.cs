@@ -7,8 +7,15 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1.Car
 {
-    class SmallCar : ICar
+    class SmallCar : Car
     {
+
+        public SmallCar()
+        {
+            Price = 200;
+            ISize = new Size.Size();
+        }
+        
         double _price;
         public SmallCar(double Price)
 
@@ -48,6 +55,7 @@ namespace ConsoleApplication1.Car
         {
             //double len = Boxes.Sum(s => s.ISize.Length);
             throw new NotImplementedException();
+
         }
     }
 }
