@@ -1,27 +1,15 @@
-﻿using System;
+﻿using ConsoleApplication1;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication1.Car
+namespace ClassLibrary1
 {
-    class Car : ICar
+    class CarSize : ISize
     {
-        public ISize ISize
-        {
-            get
-            {
-                return new Size.Size();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        public double Price
+        public double Height
         {
             get
             {
@@ -34,9 +22,30 @@ namespace ConsoleApplication1.Car
             }
         }
 
-        public double CountPrice(List<IBox> Boxes)
+        public double Length
         {
-            throw new NotImplementedException();
+            get
+            {
+                throw new NotImplementedException();
+            }
+
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public double Width
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+
+            set
+            {
+                throw new NotImplementedException();
+            }
         }
     }
 }
